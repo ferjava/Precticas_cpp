@@ -1,0 +1,11 @@
+Build started at 2020-04-05T20:05:34.553537
+Main binary: /usr/bin/python3
+Build Options: -Dbuildtype=debug -Dlayout=flat
+Python system: Linux
+The Meson build system
+Version: 0.52.0
+Source dir: /home/ferjava/Workspace-General/Practica_CPP
+Build dir: /home/ferjava/Workspace-General/Practica_CPP/build
+Build type: native build
+
+ERROR: No statements in code.
