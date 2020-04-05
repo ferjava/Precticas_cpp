@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/home/ferjava/Workspace-General/Practica_CPP/build",
+    "command": "c++ -ICapitulo_1/bc2243d@@capitulo1@exe -ICapitulo_1 -I../Capitulo_1 -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o' -MF 'Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o.d' -o 'Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o' -c ../Capitulo_1/Programa.cpp",
+    "file": "../Capitulo_1/Programa.cpp",
+    "output": "Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o"
+  }
+]
