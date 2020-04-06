@@ -11,6 +11,8 @@
  * 
  */
 #include <string>
+#pragma once 
+
 namespace fjv
 /**
  *@namespace fjv

@@ -36,12 +36,12 @@ build PHONY: phony
 
 # Build rules for targets
 
-build Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o: cpp_COMPILER ../Capitulo_1/Programa.cpp
- DEPFILE = Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o.d
- ARGS = -ICapitulo_1/bc2243d@@capitulo1@exe -ICapitulo_1 -I../Capitulo_1 -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+build meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o: cpp_COMPILER ../Capitulo_1/Programa.cpp
+ DEPFILE = meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o.d
+ ARGS = -Imeson-out/bc2243d@@capitulo1@exe -ICapitulo_1 -I../Capitulo_1 -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
 
-build Capitulo_1/capitulo1: cpp_LINKER Capitulo_1/bc2243d@@capitulo1@exe/Programa.cpp.o
- LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined
+build meson-out/capitulo1: cpp_LINKER meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$$ORIGIN/' -Wl,-rpath-link,/home/ferjava/Workspace-General/Practica_CPP/build/meson-out
 
 # Test rules
 
@@ -83,7 +83,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony Capitulo_1/capitulo1
+build all: phony meson-out/capitulo1
 
 build clean: phony meson-clean
 
