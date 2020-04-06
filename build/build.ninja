@@ -43,6 +43,17 @@ build meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o: cpp_COMPILER ../Capitulo_
 build meson-out/capitulo1: cpp_LINKER meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o
  LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$$ORIGIN/' -Wl,-rpath-link,/home/ferjava/Workspace-General/Practica_CPP/build/meson-out
 
+build meson-out/e6a5810@@TiendaCome@exe/main.cpp.o: cpp_COMPILER ../TiendaComestibles/main.cpp
+ DEPFILE = meson-out/e6a5810@@TiendaCome@exe/main.cpp.o.d
+ ARGS = -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o: cpp_COMPILER ../TiendaComestibles/GroceryItem.cpp
+ DEPFILE = meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o.d
+ ARGS = -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build meson-out/TiendaCome: cpp_LINKER meson-out/e6a5810@@TiendaCome@exe/main.cpp.o meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o
+ LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$$ORIGIN/' -Wl,-rpath-link,/home/ferjava/Workspace-General/Practica_CPP/build/meson-out
+
 # Test rules
 
 build meson-test: CUSTOM_COMMAND all PHONY
@@ -83,7 +94,7 @@ build meson-uninstall: CUSTOM_COMMAND PHONY
 
 build uninstall: phony meson-uninstall
 
-build all: phony meson-out/capitulo1
+build all: phony meson-out/capitulo1 meson-out/TiendaCome
 
 build clean: phony meson-clean
 
@@ -91,13 +102,13 @@ build meson-clean: CUSTOM_COMMAND PHONY
  COMMAND = /usr/bin/ninja -t clean
  description = Cleaning.
 
-build build.ninja: REGENERATE_BUILD ../meson.build ../fjv/meson.build ../Capitulo_1/meson.build meson-private/coredata.dat
+build build.ninja: REGENERATE_BUILD ../meson.build ../fjv/meson.build ../Capitulo_1/meson.build ../TiendaComestibles/meson.build meson-private/coredata.dat
  pool = console
 
 build reconfigure: REGENERATE_BUILD PHONY
  pool = console
 
-build ../meson.build ../fjv/meson.build ../Capitulo_1/meson.build meson-private/coredata.dat: phony 
+build ../meson.build ../fjv/meson.build ../Capitulo_1/meson.build ../TiendaComestibles/meson.build meson-private/coredata.dat: phony 
 
 default all
 

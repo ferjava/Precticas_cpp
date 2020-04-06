@@ -4,5 +4,17 @@
     "command": "c++ -Imeson-out/bc2243d@@capitulo1@exe -ICapitulo_1 -I../Capitulo_1 -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o' -MF 'meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o.d' -o 'meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o' -c ../Capitulo_1/Programa.cpp",
     "file": "../Capitulo_1/Programa.cpp",
     "output": "meson-out/bc2243d@@capitulo1@exe/Programa.cpp.o"
+  },
+  {
+    "directory": "/home/ferjava/Workspace-General/Practica_CPP/build",
+    "command": "c++ -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'meson-out/e6a5810@@TiendaCome@exe/main.cpp.o' -MF 'meson-out/e6a5810@@TiendaCome@exe/main.cpp.o.d' -o 'meson-out/e6a5810@@TiendaCome@exe/main.cpp.o' -c ../TiendaComestibles/main.cpp",
+    "file": "../TiendaComestibles/main.cpp",
+    "output": "meson-out/e6a5810@@TiendaCome@exe/main.cpp.o"
+  },
+  {
+    "directory": "/home/ferjava/Workspace-General/Practica_CPP/build",
+    "command": "c++ -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o' -MF 'meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o.d' -o 'meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o' -c ../TiendaComestibles/GroceryItem.cpp",
+    "file": "../TiendaComestibles/GroceryItem.cpp",
+    "output": "meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o"
   }
 ]

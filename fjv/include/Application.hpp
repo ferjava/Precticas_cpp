@@ -10,6 +10,7 @@
  * @copyright Copyright (c) 2020
  * 
  */
+#include <iostream>
 #include <string>
 #pragma once 
 
@@ -60,20 +61,20 @@ namespace fjv
                 version.MINOR = version_minor;
             }
             virtual ~Application(){};
-            virtual int Init (){return 0;};
+            virtual int init (){return 0;};
             /**
              * @brief Se encarga de la logica de nuestro programa 
              * Determina que cambios afectan nuestra aplicacion y que hacer 
              * 
              * @return int 
              */
-            virtual int Update (){return 0;};
+            virtual int update (){return 0;};
             /**
              * @brief Se encarga de destruir y limpiar todos nuestros objetos 
              * 
              * @return int 
              */
-            virtual int Exit(){return 0;};
+            virtual int exit(){return 0;};
             ///////////////////
             ///Modificadoras
             ///////////////////

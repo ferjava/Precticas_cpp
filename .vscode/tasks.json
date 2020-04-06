@@ -17,23 +17,36 @@
         },
         {
             "type": "meson",
-            "target": "Capitulo_1/capitulo1",
-            "mode": "build",
-            "group": "build",
-            "problemMatcher": []
-        },
-        {
-            "type": "meson",
             "mode": "clean",
             "group": "clean",
             "problemMatcher": []
         },
         {
             "type": "meson",
-            "target": "Capitulo_1/capitulo1",
+            "target": "meson-out/TiendaCome",
             "mode": "run",
             "group": "test",
             "problemMatcher": []
+        },
+        {
+            "type": "meson",
+            "target": "meson-out/capitulo1",
+            "mode": "run",
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "type": "meson",
+            "target": "meson-out/TiendaCome",
+            "mode": "build",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "type": "meson",
+            "mode": "reconfigure",
+            "group": "rebuild",
+            "problemMatcher": []
         }
     ]
-}
+} 
