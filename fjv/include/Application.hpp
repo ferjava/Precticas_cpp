@@ -49,7 +49,8 @@ namespace fjv
          * Construye el objeto Aplicacion por defecto 
          * 
          */
-            Application();
+            Application()
+            {} 
             /**
              * @brief Se encarga de la inicializacion de nuestra aplicacion
              * 
@@ -63,20 +64,20 @@ namespace fjv
                 version.PATCH = version_patch;
             }
             virtual ~Application(){};
-            virtual int init (){return 0;};
+            virtual uint init (){return 0;};
             /**
              * @brief Se encarga de la logica de nuestro programa 
              * Determina que cambios afectan nuestra aplicacion y que hacer 
              * 
              * @return int 
              */
-            virtual int update (){return 0;};
+            virtual uint update (){return 0;};
             /**
              * @brief Se encarga de destruir y limpiar todos nuestros objetos 
              * 
              * @return int 
              */
-            virtual int exit(){return 0;};
+            virtual uint exit(){return 0;};
             ///////////////////
             ///Modificadoras
             ///////////////////

@@ -10,28 +10,33 @@
  */
 #include "fjv.h"
 #include "GroceryItem.hpp"
+#include "Store.hpp"
 int main (int argc ,char* argv[])
 {
-    fjv::Application * app = new fjv::Application("Tienda de comestibles ",0,1,0);
-    fjv::Tienda::GroceryItem * iten = new fjv::Tienda::GroceryItem("prueba",10,2);
+    fjv::Tienda::Store * tienda = new fjv::Tienda::Store();
 
+    tienda->set_name("Tienda de Alimentos la buena berenjena");
 
-    std::cout << app->get_name() << std::endl ;
-    std::cout << iten->get_nameitem() << std::endl;
-    try
+    std::cout << tienda->get_name() << std::endl;
+    uint ert = tienda->init();
+    if(ert != fjv::Tienda::fjv_return::FJV_SUCESS) exit(EXIT_FAILURE);
+    ert = tienda->update();
+    if(ert != fjv::Tienda::fjv_return::FJV_SUCESS) exit(EXIT_FAILURE);
+    ert = tienda->exit();
+    if(ert != fjv::Tienda::fjv_return::FJV_SUCESS)
     {
-        iten->set_qtypurchased(5);
-       std::cout <<  iten->get_qtypurchased() << std::endl;
+        std::cout << "ADIOs" << std::endl;
     }
-    catch(fjv::Tienda::ExMaxItemExceded &e )
+    else
     {
-        e.mensaje();
-        std::cout << "Solo tienes :" << iten->get_qtyitem() <<  std::endl;
-     }
+        /* code */
+        std::cout << " JOERRRRRR"<< std::endl;
+    }
     
-    
-    delete app;
-    delete iten;
+
+
+
+
     return EXIT_SUCCESS;
 
     

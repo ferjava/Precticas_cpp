@@ -1,4 +1,4 @@
-Build started at 2020-04-08T11:36:20.640265
+Build started at 2020-04-08T21:08:18.785030
 Main binary: /usr/bin/python3
 Build Options: -Dbuildtype=debug -Dlayout=flat -Dbackend=ninja
 Python system: Linux
@@ -22,8 +22,8 @@ Target machine cpu: x86_64
 Build targets in project: 2
 Found ninja-1.9.0 at /usr/bin/ninja
 Running compile:
-Working directory:  /home/ferjava/Workspace-General/Practica_CPP/build/meson-private/tmpvpnzsvlc
-Command line:  c++ /home/ferjava/Workspace-General/Practica_CPP/build/meson-private/tmpvpnzsvlc/testfile.cpp -o /home/ferjava/Workspace-General/Practica_CPP/build/meson-private/tmpvpnzsvlc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+Working directory:  /home/ferjava/Workspace-General/Practica_CPP/build/meson-private/tmpec710iii
+Command line:  c++ /home/ferjava/Workspace-General/Practica_CPP/build/meson-private/tmpec710iii/testfile.cpp -o /home/ferjava/Workspace-General/Practica_CPP/build/meson-private/tmpec710iii/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
 
 Code:
  

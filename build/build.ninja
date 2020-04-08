@@ -51,7 +51,11 @@ build meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o: cpp_COMPILER ../Tiend
  DEPFILE = meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o.d
  ARGS = -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
 
-build meson-out/TiendaCome: cpp_LINKER meson-out/e6a5810@@TiendaCome@exe/main.cpp.o meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o
+build meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o: cpp_COMPILER ../TiendaComestibles/Store.cpp
+ DEPFILE = meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o.d
+ ARGS = -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g
+
+build meson-out/TiendaCome: cpp_LINKER meson-out/e6a5810@@TiendaCome@exe/main.cpp.o meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o
  LINK_ARGS = -Wl,--as-needed -Wl,--no-undefined '-Wl,-rpath,$$ORIGIN/' -Wl,-rpath-link,/home/ferjava/Workspace-General/Practica_CPP/build/meson-out
 
 # Test rules

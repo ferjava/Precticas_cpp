@@ -16,5 +16,11 @@
     "command": "c++ -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o' -MF 'meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o.d' -o 'meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o' -c ../TiendaComestibles/GroceryItem.cpp",
     "file": "../TiendaComestibles/GroceryItem.cpp",
     "output": "meson-out/e6a5810@@TiendaCome@exe/GroceryItem.cpp.o"
+  },
+  {
+    "directory": "/home/ferjava/Workspace-General/Practica_CPP/build",
+    "command": "c++ -Imeson-out/e6a5810@@TiendaCome@exe -ITiendaComestibles -I../TiendaComestibles -I../fjv/include -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -MD -MQ 'meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o' -MF 'meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o.d' -o 'meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o' -c ../TiendaComestibles/Store.cpp",
+    "file": "../TiendaComestibles/Store.cpp",
+    "output": "meson-out/e6a5810@@TiendaCome@exe/Store.cpp.o"
   }
 ]
