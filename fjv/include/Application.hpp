@@ -25,7 +25,7 @@ namespace fjv
 {
    /**
     * @brief  Crea un objeto version
-    * Crea un Objeto con dos @param MAJOR @param MINOR de tipo int 
+    * Crea un Objeto con dos @param MAJOR @param MINOR  @param PATCH de tipo int 
     * que determinan la es estado de version del programa 
     * 
     */
@@ -33,6 +33,7 @@ namespace fjv
     {
         int MAJOR;
         int MINOR;
+        int PATCH;
     };
     /**
      * @class Application
@@ -54,11 +55,12 @@ namespace fjv
              * 
              * @return int 
              */
-            Application(std::string name_value , int version_major , int version_minor)
+            Application(std::string name_value , int version_major , int version_minor , int version_patch)
             {
                 name = name_value;
                 version.MAJOR = version_major;
                 version.MINOR = version_minor;
+                version.PATCH = version_patch;
             }
             virtual ~Application(){};
             virtual int init (){return 0;};
@@ -82,12 +84,14 @@ namespace fjv
             std::string get_name (){return name;};///<coje el nombre de la aplicacion 
             void set_name(std::string name_value ){name = name_value;};///<Coloca el nombre de la aplicaion 
             fjv::VERSION get_version (){return version;};///<coje la version de la aplicacion
-            void set_version (int major_value  , int minor_value ){version.MAJOR = major_value;
+            void set_version (int major_value  , int minor_value , int patch_value ){version.MAJOR = major_value;
                                                                    version.MINOR = minor_value;
+                                                                   version.PATCH = patch_value;
               };///<Coloca la version de la aplicacion 
             int get_version_major() {return version.MAJOR;};///<Retorna el MAJOR de la version 
             int get_version_minor() {return version.MINOR;};///<Retorna el MINOR de la version 
-
+            int get_version_patch() {return version.PATCH;};///<Retorna el PATCH de la version 
+            
 
 
 

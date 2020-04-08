@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-     fjv::Application* app = new fjv::Application("Mi primera prueba ",0,0);
+     fjv::Application* app = new fjv::Application("Mi primera prueba ",0,0,0);
      std::cout << "Probando el base del framework "<< std::endl;
     if(argc < 3)
     {

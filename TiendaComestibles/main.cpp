@@ -12,7 +12,7 @@
 #include "GroceryItem.hpp"
 int main (int argc ,char* argv[])
 {
-    fjv::Application * app = new fjv::Application("Tienda de comestibles ",0,1);
+    fjv::Application * app = new fjv::Application("Tienda de comestibles ",0,1,0);
     fjv::Tienda::GroceryItem * iten = new fjv::Tienda::GroceryItem("prueba",10,2);
 
 

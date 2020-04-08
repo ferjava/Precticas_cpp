@@ -28,6 +28,14 @@ namespace fjv
           {
               //TODO: Contructor 
           } 
+        GroceryItem::GroceryItem(const GroceryItem & value )
+         {
+             name_item = value.name_item;
+             item_price = value.item_price;
+             qty_on_hand = value.qty_on_hand;
+             qty_purchase = value.qty_purchase;
+
+         } 
         GroceryItem::~GroceryItem()
           {
               //TODO: destructor 

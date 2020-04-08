@@ -12,6 +12,7 @@
  */
 #include <string>
 #include <iostream>
+
 #pragma once
 namespace fjv
 {
@@ -58,13 +59,22 @@ namespace fjv
                  * @param price_value   precio del articulo 
                  * @param qty_value     Cantidad de articulos disponible   
                  */
+                
                 GroceryItem(std::string name_value , u_int price_value , u_int qty_value );//< Constructor para añadir articulos
+               /**
+                * @brief Construct a new Grocery Item object
+                * Constructor de copia
+                * @param GroceryItem 
+                */
+                GroceryItem(const GroceryItem &);
+                
                 /**
                  * @brief Destroy the Grocery Item object
                  * 
                  */
+               
                 virtual ~GroceryItem();
-                
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ///Modificadoras (get/set)
                 
                 //set
