@@ -4,7 +4,8 @@
 TiendaSrc = [
     'main.cpp',
     'GroceryItem.cpp',
-    'Store.cpp'
+    'Store.cpp',
+    'Storage.cpp'
 ]
 
 executable('TiendaCome', sources : TiendaSrc , include_directories : fjv_include_dir)

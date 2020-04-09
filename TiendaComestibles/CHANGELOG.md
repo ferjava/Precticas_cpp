@@ -6,10 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     
 ## [unrealesed]
 
-## [.1.0]  2020-04-08        
+- ##  [0.1.0]  2020-04-08        
 **********************
 ### Added
 - La clase **Groceryitem** al proyecto 
 - Creado el progyecto en github
 - Creado el archivo **"changedlog"** 
 - La clase **Store** al proyecto 
+- La clase **Storage** se ha añadido

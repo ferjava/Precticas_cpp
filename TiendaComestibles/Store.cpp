@@ -15,9 +15,7 @@
 namespace fjv
 {
     namespace Tienda
-    {
-        /**
-         * @brief Se encarga de
+    {   /**
          * 
          * @return uint 
          */
