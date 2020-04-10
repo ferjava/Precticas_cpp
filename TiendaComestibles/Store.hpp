@@ -34,7 +34,13 @@ namespace fjv
            private:
 
 
-           public:  
+           public:   
+           
+           /**
+            * @brief Construct a new Store object
+            * Cosnturctor por defecto de
+            */
+           Store(){};
            //Acciones 
            /**
             * @brief Esta accion de inicializar la aplicacion 

@@ -20,22 +20,22 @@
 namespace fjv
 {
     namespace Tienda
-    {
+    { 
         class Storage
         {
             public:
-            Storage(Store *tienda);///< Almacen relacionado con la esa tienda 
+            // Storage(Store tienda_value);///< Almacen relacionado con la esa tienda 
             //Acciones 
             virtual ~Storage();///< Destruye todos los objetos de la lista y libera la memoria
             //Modificadores de lista
             uint init();///< Inicializa  la lista 
-            uint update ();///< Actualiza la lista 
+            uint update();///< Actualiza la lista 
             uint exit();///Cierra la lista 
             //Modificadores de articulos en la lista
             uint add_item (GroceryItem* item);///< Añade un articulo  a la lista 
             uint del_item (GroceryItem* item);///< elimimina el articulo  de la lista 
             uint drecease_item(GroceryItem* item ,uint articulos_a_quitar);///< Reduce la cantidad disponible en ese articulo
-            uint increase_item(GroceryItem* item , uint articulos_a_add);///< Añade mas articuloes de ese tipo
+            uint increase_item(GroceryItem* item ,uint articulos_a_add);///< Añade mas articuloes de ese tipo
             GroceryItem* current();///< Articulo actual de la lista 
             GroceryItem* next();///<  proximo Articulo de la lista
             GroceryItem* previus();///< Proximo Articulo de la lista 
@@ -44,11 +44,13 @@ namespace fjv
             int number_item();///< Obtiene el numero de articulos de la lista 
 
             protected:
+
             uint load_file(std::string file_name );///< Carga los Articulos guardados en el Archivo
-            uint save_file(std::string file_name ):///< Salva los Articulos guardado en el Archivo 
+            uint save_file(std::string file_name );///< Salva los Articulos guardado en el Archivo 
             
             private:
-            Store* tienda ;
+
+            
             std::list<GroceryItem*> grocery_list ; ///< Lista de articulos 
             std::list<GroceryItem*>::iterator grocery_list_iter ; ///< Iterador de la lista 
                 
